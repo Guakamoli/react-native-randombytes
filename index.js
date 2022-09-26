@@ -3,7 +3,7 @@ if (typeof Buffer === 'undefined') {
 }
 
 let sjcl = require('sjcl')
-let RNRandomBytes = require('react-native').NativeModules.RNRandomBytes
+let RNCryptoRandomBytes = require('react-native').NativeModules.RNCryptoRandomBytes
 
 function noop () {}
 
@@ -12,8 +12,8 @@ function toBuffer (nativeStr) {
 }
 
 function init () {
-  if (RNRandomBytes.seed) {
-    let seedBuffer = toBuffer(RNRandomBytes.seed)
+  if (RNCryptoRandomBytes.seed) {
+    let seedBuffer = toBuffer(RNCryptoRandomBytes.seed)
     addEntropy(seedBuffer)
   } else {
     seedSJCL()
@@ -45,7 +45,7 @@ export function randomBytes (length, cb) {
     return new Buffer(hexString, 'hex')
   }
 
-  RNRandomBytes.randomBytes(length, function(err, base64String) {
+  RNCryptoRandomBytes.randomBytes(length, function(err, base64String) {
     if (err) {
       cb(err)
     } else {

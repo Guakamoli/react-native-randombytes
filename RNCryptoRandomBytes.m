@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Facebook. All rights reserved.
 //
 
-#import "RNRandomBytes.h"
+#import "RNCryptoRandomBytes.h"
 #if __has_include(<React/RCTBridgeModule.h>)
 #import <React/RCTBridgeModule.h>
 #elif __has_include("RCTBridgeModule.h")
@@ -15,7 +15,7 @@
 #import "React/RCTBridgeModule.h" // Required when used as a Pod in a Swift project
 #endif
 
-@implementation RNRandomBytes
+@implementation RNCryptoRandomBytes
 
 RCT_EXPORT_MODULE()
 

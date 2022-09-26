@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		163CDE472087CAD3001065FB /* RNRandomBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EEC93E1BFE4B1D00D468EB /* RNRandomBytes.m */; };
-		163CDE4A2087CAD3001065FB /* RNRandomBytes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 73EEC93C1BFE4B1D00D468EB /* RNRandomBytes.h */; };
-		73EEC93D1BFE4B1D00D468EB /* RNRandomBytes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 73EEC93C1BFE4B1D00D468EB /* RNRandomBytes.h */; };
-		73EEC93F1BFE4B1D00D468EB /* RNRandomBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EEC93E1BFE4B1D00D468EB /* RNRandomBytes.m */; };
+		7C048D1D28E1A3FC007C9B45 /* RNCryptoRandomBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C048D1C28E1A3FC007C9B45 /* RNCryptoRandomBytes.m */; };
+		7C048D1E28E1A3FC007C9B45 /* RNCryptoRandomBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C048D1C28E1A3FC007C9B45 /* RNCryptoRandomBytes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,7 +18,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				163CDE4A2087CAD3001065FB /* RNRandomBytes.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -30,7 +27,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				73EEC93D1BFE4B1D00D468EB /* RNRandomBytes.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,9 +35,9 @@
 /* Begin PBXFileReference section */
 		163CDE4E2087CAD3001065FB /* libRNRandomBytes-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libRNRandomBytes-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73EEC9391BFE4B1D00D468EB /* libRNRandomBytes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNRandomBytes.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		73EEC93C1BFE4B1D00D468EB /* RNRandomBytes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNRandomBytes.h; sourceTree = "<group>"; };
-		73EEC93E1BFE4B1D00D468EB /* RNRandomBytes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNRandomBytes.m; sourceTree = "<group>"; };
 		73EEC94A1BFE4B1D00D468EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C048D1B28E1A3FC007C9B45 /* RNCryptoRandomBytes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptoRandomBytes.h; sourceTree = "<group>"; };
+		7C048D1C28E1A3FC007C9B45 /* RNCryptoRandomBytes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptoRandomBytes.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +61,8 @@
 		73EEC9301BFE4B1D00D468EB = {
 			isa = PBXGroup;
 			children = (
-				73EEC93C1BFE4B1D00D468EB /* RNRandomBytes.h */,
-				73EEC93E1BFE4B1D00D468EB /* RNRandomBytes.m */,
+				7C048D1B28E1A3FC007C9B45 /* RNCryptoRandomBytes.h */,
+				7C048D1C28E1A3FC007C9B45 /* RNCryptoRandomBytes.m */,
 				73EEC9481BFE4B1D00D468EB /* RNRandomBytesTests */,
 				73EEC93A1BFE4B1D00D468EB /* Products */,
 			);
@@ -153,6 +149,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 73EEC9301BFE4B1D00D468EB;
@@ -171,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				163CDE472087CAD3001065FB /* RNRandomBytes.m in Sources */,
+				7C048D1E28E1A3FC007C9B45 /* RNCryptoRandomBytes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73EEC93F1BFE4B1D00D468EB /* RNRandomBytes.m in Sources */,
+				7C048D1D28E1A3FC007C9B45 /* RNCryptoRandomBytes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
