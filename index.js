@@ -12,7 +12,7 @@ function toBuffer (nativeStr) {
 }
 
 function init () {
-  if (RNCryptoRandomBytes.seed) {
+  if (RNCryptoRandomBytes?.seed) {
     let seedBuffer = toBuffer(RNCryptoRandomBytes.seed)
     addEntropy(seedBuffer)
   } else {
@@ -45,7 +45,7 @@ export function randomBytes (length, cb) {
     return new Buffer(hexString, 'hex')
   }
 
-  RNCryptoRandomBytes.randomBytes(length, function(err, base64String) {
+  RNCryptoRandomBytes?.randomBytes?.(length, function(err, base64String) {
     if (err) {
       cb(err)
     } else {
